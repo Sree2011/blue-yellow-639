@@ -12,7 +12,29 @@
             color: #333;
         }
 
-        header {
+        header {        :root {
+            --bright-royal-blue: #005BBB;
+            --electric-cyan-blue: #00A4CC;
+            --sunshine-yellow: #FFD600;
+            --creamy-ivory: #F8EDE3;
+            --dark-charcoal: #252525;
+        }
+
+        .navbar {
+            background-color: var(--bright-royal-blue);
+        }
+
+        .navbar-brand, .nav-link {
+            color: var(--creamy-ivory) !important;
+        }
+
+        .nav-link:hover {
+            color: var(--sunshine-yellow) !important;
+        }
+
+        .logo {
+            height: 40px;
+        }
             background-color: #003366; /* Navy Blue */
             color: white;
             padding: 20px;
