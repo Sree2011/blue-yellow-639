@@ -1,100 +1,106 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Root Variables for Color Palette */
 :root {
-    --bright-royal-blue: #005BBB;
-    --electric-cyan-blue: #00A4CC;
-    --sunshine-yellow: #FFD600;
-    --creamy-ivory: #D3D3D3;
-    --dark-charcoal: #252525;
+    --deepest-navy: #000080; /* Dark grounding blue */
+    --bright-royal-blue: #005BBB; /* Vibrant blue */
+    --electric-cyan-blue: #00A4CC; /* Bright and energetic */
+    --sky-blue: #87CEEB; /* Light and airy */
+    --dark-goldenrod: #B8860B; /* Deep yellow for contrast */
+    --golden-yellow: #FFD700; /* Rich and warm */
+    --sunshine-yellow: #FFD600; /* Bright and cheerful */
+    --pale-yellow: #FFFFE0; /* Soft and subtle */
+    --light-grayish-blue: #D8E6F3; /* Gentle blue for balance */
+    --light-cream: #FFFACD; /* Very light yellow */
 }
 
-/* Global Styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--creamy-ivory); /* Creamy Ivory */
-    color: var(--dark-charcoal); /* Dark Charcoal */
+    background-color: var(--light-grayish-blue);
+    color: var(--deepest-navy);
+    margin: 0;
+    padding: 0;
 }
 
-
-
-/* Navbar Styles */
+/* Navbar */
 .navbar {
-    background-color: var(--bright-royal-blue);
+    background-color: var(--deepest-navy);
+    padding: 10px 0;
 }
 
-.navbar-brand, .nav-link {
-    color: var(--sunshine-yellow) !important;
+.navbar-brand span {
+    color: var(--sunshine-yellow);
+    font-size: 20px;
 }
 
-.nav-link:hover {
-    color: var(--electric-cyan-blue) !important;
-}
-
-/* Logo Styling */
-.logo {
-    height: 35px;
-    background-color: var(--bright-royal-blue); /* Royal Blue */
-    color: var(--creamy-ivory); /* Ivory */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px; /* Adjust font size as needed */
-}
-
-/* Navigation */
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    color: var(--sunshine-yellow); /* Sunshine Yellow */
-    text-decoration: none;
-    margin: 0 15px;
+.navbar-nav .nav-link {
+    color: var(--golden-yellow);
     font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--electric-cyan-blue);
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, var(--bright-royal-blue), var(--golden-yellow));
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
 
 /* Section */
 section {
-    padding: 40px;
     text-align: center;
+    padding: 50px;
+    background-color: var(--pale-yellow);
 }
 
-/* Buttons */
+h2 {
+    color: var(--deepest-navy);
+}
+
+p {
+    font-size: 18px;
+    color: var(--dark-goldenrod);
+}
+
+/* Button */
 .btn {
-    background-color: var(--sunshine-yellow); /* Sunshine Yellow */
-    color: var(--dark-charcoal); /* Dark Charcoal */
-    padding: 10px 20px;
-    margin: 2px;
+    background: linear-gradient(45deg, var(--bright-royal-blue), var(--golden-yellow));
+    color: white;
+    padding: 12px 24px;
     border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: var(--electric-cyan-blue); /* Electric Cyan Blue */
-    color: var(--creamy-ivory); /* Creamy Ivory */
-}
-
-/* Cards */
-.card {
-    padding: auto;
-    margin: auto;
-    background-color: var(--creamy-ivory);
-    border: 1px solid var(--dark-charcoal);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, var(--electric-cyan-blue), var(--sunshine-yellow));
 }
 
 /* Footer */
 footer {
-    background-color: var(--dark-charcoal); /* Dark Charcoal */
-    color: var(--creamy-ivory); /* Ivory */
-    padding: 10px;
+    background-color: var(--deepest-navy);
+    color: var(--pale-yellow);
     text-align: center;
-    margin-top: 40px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
 }
