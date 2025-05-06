@@ -26,11 +26,11 @@ body {
 }
 
 .navbar-brand, .nav-link {
-    color: var(--creamy-ivory) !important;
+    color: var(--sunshine-yellow) !important;
 }
 
 .nav-link:hover {
-    color: var(--sunshine-yellow) !important;
+    color: var(--electric-cyan-blue) !important;
 }
 
 /* Logo Styling */
