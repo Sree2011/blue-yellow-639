@@ -1,88 +1,99 @@
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #F5F5F5; /* light gray */
-            color: #333;
-        }
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--creamy-ivory); /* Creamy Ivory */
+    color: var(--dark-charcoal); /* Dark Charcoal */
+}
 
-        header {        :root {
-            --bright-royal-blue: #005BBB;
-            --electric-cyan-blue: #00A4CC;
-            --sunshine-yellow: #FFD600;
-            --creamy-ivory: #F8EDE3;
-            --dark-charcoal: #252525;
-        }
+:root {
+    --bright-royal-blue: #005BBB;
+    --electric-cyan-blue: #00A4CC;
+    --sunshine-yellow: #FFD600;
+    --creamy-ivory: #F8EDE3;
+    --dark-charcoal: #252525;
+}
 
-        .navbar {
-            background-color: var(--bright-royal-blue);
-        }
+/* Navbar Styles */
+.navbar {
+    background-color: var(--bright-royal-blue);
+}
 
-        .navbar-brand, .nav-link {
-            color: var(--creamy-ivory) !important;
-        }
+.navbar-brand, .nav-link {
+    color: var(--creamy-ivory) !important;
+}
 
-        .nav-link:hover {
-            color: var(--sunshine-yellow) !important;
-        }
+.nav-link:hover {
+    color: var(--sunshine-yellow) !important;
+}
 
-        .logo {
-            height: 60px;
-            width: 60px;
-            background-color: #003366; /* Navy Blue */
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+/* Logo Styling */
+.logo {
+    height: 30px;
+    background-color: var(--bright-royal-blue); /* Royal Blue */
+    color: var(--creamy-ivory); /* Ivory */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; /* Adjust font size as needed */
+    border-radius: 50%; /* Creates a circular logo */
+}
 
-        nav {
-            margin-top: 10px;
-        }
+/* Navigation */
+nav {
+    margin-top: 10px;
+}
 
-        nav a {
-            color: #FFD700; /* Golden Yellow */
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+nav a {
+    color: var(--sunshine-yellow); /* Sunshine Yellow */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
 
-        section {
-            padding: 40px;
-            text-align: center;
-        }
+/* Section */
+section {
+    padding: 40px;
+    text-align: center;
+}
 
-        .btn {
-            background-color: #FFD700; /* Golden Yellow */
-            color: #003366; /* Navy Blue */
-            padding: 10px 20px;
-            margin: 2px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            cursor: pointer;
-        }
+/* Buttons */
+.btn {
+    background-color: var(--sunshine-yellow); /* Sunshine Yellow */
+    color: var(--dark-charcoal); /* Dark Charcoal */
+    padding: 10px 20px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
 
-        .btn:hover {
-            background-color: #87CEEB; /* Sky Blue */
-            color: #003366;
-        }
+.btn:hover {
+    background-color: var(--electric-cyan-blue); /* Electric Cyan Blue */
+    color: var(--creamy-ivory); /* Creamy Ivory */
+}
 
+/* Cards */
+.card {
+    padding: auto;
+    margin: auto;
+    background-color: var(--creamy-ivory);
+    border: 1px solid var(--dark-charcoal);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 
-        .card{
-            padding: auto;
-            margin: auto;
-        }
-
-        footer {
-            background-color: #003366;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            margin-top: 40px;
-        }
+/* Footer */
+footer {
+    background-color: var(--dark-charcoal); /* Dark Charcoal */
+    color: var(--creamy-ivory); /* Ivory */
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
