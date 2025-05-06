@@ -5,13 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--creamy-ivory); /* Creamy Ivory */
-    color: var(--dark-charcoal); /* Dark Charcoal */
-}
-
 :root {
     --bright-royal-blue: #005BBB;
     --electric-cyan-blue: #00A4CC;
@@ -19,6 +12,15 @@ body {
     --creamy-ivory: #D3D3D3;
     --dark-charcoal: #252525;
 }
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--creamy-ivory); /* Creamy Ivory */
+    color: var(--dark-charcoal); /* Dark Charcoal */
+}
+
+
 
 /* Navbar Styles */
 .navbar {
